@@ -8,26 +8,22 @@
 - Allure
 
 ## 项目结构
-    petstore_tests/
-    ├── conftest.py # 公共配置（BASE_URL、Session、重试函数、唯一ID生成）
-    ├── test_pet.py # 宠物模块 CRUD + 负向测试 + 参数化测试
-    ├── test_order.py # 订单模块 CRUD + 负向测试
-    ├── test_user.py # 用户模块 CRUD + 负向测试
-    ├── test_scenarios.py # 完整业务流程场景测试
-    ├── requirements.txt # 依赖列表
-    └── README.md
+petstore_tests/
+├── conftest.py # 公共配置（BASE_URL、Session、重试函数、唯一ID生成）
+├── test_pet.py # 宠物模块 CRUD + 负向测试 + 参数化测试
+├── test_order.py # 订单模块 CRUD + 负向测试
+├── test_user.py # 用户模块 CRUD + 负向测试
+├── test_scenarios.py # 完整业务流程场景测试
+├── requirements.txt # 依赖列表
+└── README.md
 
 
 ## 快速开始
-1. 克隆仓库  
     ```bash
     git clone https://github.com/lpdewo/petstore_tests.git
     cd petstore_tests
-2.安装依赖
     pip install -r requirements.txt
-3.运行所有测试
     pytest
-4.生成Allure报告
     pytest --alluredir=./allure-results
     allure serve ./allure-results
     ```
